@@ -17,8 +17,22 @@ public class AccountServices {
      }
 
     //todo display account
+    public Optional<Account> displayAccount(Long id){
+        return accountRepository = accountRepository.getReferanceById(id)
+    }
 
     //todo make deposit
+    public Optional<Account> makeDeposit(Double deposit, Long id){
+        Account account = accountRepository.getReferanceById(id);
+        //todo make deposit
+        return account;
+
+    } 
 
     //todo make withdraw
+    public Optional<account> makeWithdraw(Double withdraw, Long id){
+        Account account = accountRepository.getReferanceById(id);
+        //todo make withdraw 
+        return account;
+    }
 }
